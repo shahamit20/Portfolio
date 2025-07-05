@@ -1094,6 +1094,7 @@ button a {
     }
 
     .contact {
+        width: 91%;
         height: auto;
         padding-bottom: 3rem;
     }
