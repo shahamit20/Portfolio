@@ -80,55 +80,57 @@ nav {
     transform: translateY(20px);
     animation: fadeInUp 0.6s ease forwards;
 }
+
 /* Base animation */
 @keyframes fadeInUp {
     from {
-      opacity: 0;
-      transform: translateY(30px);
+        opacity: 0;
+        transform: translateY(30px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  /* Initial hidden state + animation setup */
-  .intro-text h3,
-  .intro-text h6,
-  .intro-text p,
-  .intro-text .icon,
-  .intro-text .hire,
-  .intro-text .con {
+}
+
+/* Initial hidden state + animation setup */
+.intro-text h3,
+.intro-text h6,
+.intro-text p,
+.intro-text .icon,
+.intro-text .hire,
+.intro-text .con {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 0.6s ease forwards;
-  }
-  
-  /* Delays for one-by-one appearance */
-  .intro-text h3 {
+}
+
+/* Delays for one-by-one appearance */
+.intro-text h3 {
     animation-delay: 0.2s;
-  }
-  
-  .intro-text h6 {
+}
+
+.intro-text h6 {
     animation-delay: 0.4s;
-  }
-  
-  .intro-text p {
+}
+
+.intro-text p {
     animation-delay: 0.6s;
-  }
-  
-  .intro-text .icon {
+}
+
+.intro-text .icon {
     animation-delay: 0.8s;
-  }
-  
-  .intro-text .hire {
+}
+
+.intro-text .hire {
     animation-delay: 1s;
-  }
-  
-  .intro-text .con {
+}
+
+.intro-text .con {
     animation-delay: 1.2s;
-  }
-  
+}
+
 .intro-text h3 {
     font-size: 30px;
     margin-bottom: 10px;
@@ -136,22 +138,24 @@ nav {
 }
 
 .intro-text h3 span {
-    margin-left:12px;
+    margin-left: 12px;
     font-size: 52px;
     color: #ff0050;
 }
 
-.intro-text h6{
+.intro-text h6 {
     font-size: 20px;
     margin-top: 12px;
     color: white;
 }
-.intro-text h6 span{
+
+.intro-text h6 span {
     color: #00e0d6;
     font-weight: bold;
     position: relative;
 }
-.intro-text h6 span::after{
+
+.intro-text h6 span::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -161,31 +165,37 @@ nav {
     background: #000;
     animation: typing 3s steps(10) infinite;
 }
+
 @keyframes typing {
-    40%,60%{
+
+    40%,
+    60% {
         left: calc(100% + 1px);
     }
-    100%{
+
+    100% {
         left: 0;
     }
 }
-.intro-text p{
+
+.intro-text p {
     margin-top: 2rem;
     font-size: 20px;
 }
 
-.icon{
+.icon {
     margin-top: 2rem;
     display: flex;
     font-size: 1.7rem;
     gap: 1rem;
 }
-.icon a i{
+
+.icon a i {
     background: #ff0050;
     transition: 0.3s ease-in-out;
 }
 
-.icon a i:hover{
+.icon a i:hover {
     transform: scale(1.2);
 }
 
@@ -201,13 +211,16 @@ nav {
     z-index: 2;
     padding: 0.5rem;
     opacity: 1;
-    animation: fadeIn 2s ; /* Use a proper name for the animation */
+    animation: fadeIn 2s;
+    /* Use a proper name for the animation */
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateX(30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -222,31 +235,37 @@ nav {
     object-fit: cover;
     background: black;
 }
-button{
+
+button {
     margin: 1rem 1rem 0 0;
     width: 8rem;
     height: 2.5rem;
     background-color: #901a7c;
     border: 2px solid #901a7c;
 }
-button a{
+
+button a {
     text-decoration: none;
     font-size: 16px;
     color: white;
     font-weight: bold
 }
-.hire:hover{
+
+.hire:hover {
     background: #671459;
     border: 2px solid #671459;
 }
-.con{
+
+.con {
     background: transparent;
     transition: background-position 0.4s ease;
 }
-.con:hover{
+
+.con:hover {
     background: #901a7c;
     background-position: right left;
 }
+
 /* ---------About-------------- */
 
 .about {
@@ -475,8 +494,9 @@ button a{
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 4px 17px rgba(50, 49, 49, 0.989);
     padding: 5px;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
+
 .list-box:hover {
     transform: scale(1.05);
 
@@ -509,7 +529,7 @@ button a{
     opacity: 80%;
 }
 
-.list-box button{
+.list-box button {
     background: greenyellow;
     color: black;
     font-size: 20px;
@@ -517,9 +537,11 @@ button a{
     border: none;
     border-radius: 20px;
 }
-.list-box button i{
+
+.list-box button i {
     color: black;
 }
+
 .resume {
     margin: 3rem 0 0 1.4rem;
     width: 16rem;
@@ -650,12 +672,14 @@ button a{
 
 .footer-section h4 {
     font-size: 18px;
+
     margin-bottom: 15px;
     color: #f39c12;
 }
 
 .footer-section ul {
     list-style: none;
+    display: inline-block;
     padding: 0;
 }
 
@@ -665,6 +689,7 @@ button a{
 
 .footer-section ul li a {
     color: white;
+    display: inline-block;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -772,7 +797,7 @@ button a{
     }
 
     .cont-box {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -840,6 +865,294 @@ button a{
         margin: 0;
     }
 
+    .social-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+.autoshow {
+    animation: autoshow;
+    animation-timeline: view(60% auto);
+}
+
+@keyframes autoshow {
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@media (max-width: 430px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .link {
+        flex-direction: row;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .link a {
+        font-size: 1rem;
+    }
+
+    .name h2 {
+        font-size: 2rem;
+    }
+
+    .into {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+
+    .intro-text {
+        margin-left: 9px;
+    }
+
+    .intro-text p {
+        margin-top: 1rem;
+        font-size: 11px;
+    }
+
+    .intro-photo {
+        width: 17rem;
+        height: 9rem;
+    }
+
+    .intro-text h3 {
+        font-size: 20px;
+        margin-bottom: 9px;
+    }
+
+    .intro-text h3 span {
+        margin-left: 12px;
+        font-size: 27px;
+    }
+
+    .intro-text h6 {
+        font-size: 14px;
+        margin-top: -1px;
+    }
+
+    .icon {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .icon a i {
+        width: 12px;
+        height: 12px;
+        margin-right: 3px;
+    }
+
+    button {
+        width: 4rem;
+        height: 1.5rem;
+        margin: 0.5rem 0 0 0;
+    }
+
+    .con {
+        width: 5rem;
+    }
+
+    button a {
+        font-size: 10px;
+    }
+
+    .about {
+        padding: 1rem 0;
+        flex-direction: row;
+        margin: 0;
+        width: 99%;
+        gap: 0rem;
+    }
+
+    .detel h1 {
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+
+    .detel h3 {
+        font-size: 1rem;
+    }
+
+    .left {
+        position: relative;
+        width: 26rem;
+        height: 16rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left img {
+        height: auto;
+        width: 67%;
+    }
+
+    .right {
+        width: 95%;
+    }
+
+    .detel p {
+        font-size: 11px;
+    }
+
+    .leftbg {
+        top: 3rem;
+        left: 2rem;
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .box {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .skill h1 {
+        padding: 6px 11px;
+        font-size: 1rem;
+        margin-top: 3px;
+    }
+
+    .skill-info {
+        width: 85%;
+        height: 5rem;
+    }
+
+    .skill-info img {
+        width: 3rem;
+    }
+
+    .project {
+        margin: 0;
+        width: 95%;
+    }
+
+    .project-list {
+        display: flex;
+        flex-direction: row;
+        overflow-y: auto;
+        gap: 0.8rem;
+    }
+
+    .list-img img {
+        width: 9rem;
+        height: 6rem;
+    }
+
+    .list-detail {
+        margin: 0.2rem 0 0 0.2rem;
+    }
+
+    .list-detail h3 {
+        font-size: 8px;
+    }
+
+    .list-detail p {
+        font-size: 10px;
+    }
+
+    .list-box button {
+        font-size: 14px;
+        margin-left: 7px;
+    }
+
+    .project h2 {
+        font-size: 2rem;
+    }
+
+    .resume {
+        margin: 0 0 0 1rem;
+        width: 148px;
+        padding: 10px;
+    }
+
+    .fa-solid,
+    .fas {
+        font-weight: 500;
+    }
+
+    .resume a {
+        margin-left: 0;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .contact {
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .cont-box {
+        margin-top: 1rem;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .loc {
+        height: 3rem;
+    }
+
+    .loc i {
+        font-size: 2rem;
+    }
+
+    .loc a {
+        font-size: 11px;
+    }
+
+    .lin {
+        margin: 2rem 2rem 0rem 0rem;
+    }
+
+    .take-contact label {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .take-contact input {
+        height: 1rem;
+        padding-left: 2px;
+    }
+
+    .send {
+        width: 8rem;
+        font-size: 11px;
+        height: 2rem;
+    }
+
+    .footer {
+        width: 100%;
+        margin: 0;
+    }
+    .footer-container{
+        display: flex;
+    }
+    .footer-section{
+        width: 40%;
+    }
+    .footer-section h4 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+.footer-section ul li a{
+    font-size: 15px;
+}
     .social-links {
         flex-direction: row;
         flex-wrap: wrap;
